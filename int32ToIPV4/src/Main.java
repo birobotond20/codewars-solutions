@@ -24,13 +24,11 @@ public class Main {
 
   public static void main(String[] args) {
 
-    System.out.println(longToIP(12L));
+    System.out.println(longToIP(12L)); // expected: 0.0.0.12
     System.out.println(longToIP(2154959208L)); // expected: 128.114.17.104
     System.out.println(longToIP(0)); // expected: 0.0.0.0
     System.out.println(longToIP(2149583361L)); // expected: 128.32.10.1
-    System.out.println(longToIP(540791124L)); // expected: 32.59.209.84 = 100000 111011 11010001 1010100
-    //   32.59.209.84 = 00100000 00111011 11010001 01010100
-    //                  00100000 00111011 11010001 01010100
+    System.out.println(longToIP(540791124L)); // expected: 32.59.209.84
   }
 
   private static String longToIP(long ip) {
