@@ -10,13 +10,28 @@ public class Main {
     System.out.println(rps("paper", "paper"));
   }
 
-  private static String rps(String player1, String player2) {
-    /*int rock = -5;
-    int paper = 1;
-    int scissors = 3;*/
-    if (!player1.equalsIgnoreCase(player2)){
-      if (player1)
+  private static String rps(String p1, String p2) {
+
+    if (p1.equals(p2)) {
+      return "Draw!";
+    } else if (p1.equals("scissors")) {
+      if (p2.equals("paper")) {
+        return "Player 1 won!";
+      } else {
+        return "Player 2 won!";
+      }
+    } else if (p1.equals("paper")) {
+      if (p2.equals("rock")) {
+        return "Player 1 won!";
+      } else {
+        return "Player 2 won!";
+      }
+    } else {
+      if (p2.equals("scissors")) {
+        return "Player 1 won!";
+      } else {
+        return "Player 2 won!";
+      }
     }
-    return "Draw";
   }
 }
