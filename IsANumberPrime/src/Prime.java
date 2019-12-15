@@ -39,5 +39,8 @@ public class Prime {
       }
     }
     return true;
+
+    // solution with built-in function
+    //return num > 1 && java.math.BigInteger.valueOf(num).isProbablePrime(100);
   }
 }
